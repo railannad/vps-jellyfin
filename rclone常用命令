@@ -6,3 +6,5 @@ screen -S 运行进程命名
 screen -ls
 切入
 screen -r 运行进程
+关闭
+screen -X -S 运行进程
