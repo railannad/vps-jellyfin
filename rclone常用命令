@@ -1,0 +1,8 @@
+rclone mount 挂载目录 --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
+rclone copy 挂载目录1 挂载目录2 -P
+后台运行screen
+screen -S 运行进程命名
+查看 screen后台运行的进程
+screen -ls
+切入
+screen -r 运行进程
