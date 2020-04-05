@@ -1,0 +1,11 @@
+添加 rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro       
+rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm
+下载wget https://repo.jellyfin.org/releases/server/centos/jellyfin-10.5.2-1.el7.x86_64.rpm
+安装yum localinstall jellyfin-10.5.2-1.el7.x86_64.rpm
+启用 systemctl enable jellyfin
+
+运行 systemctl start jellyfin
+
+要检查服务是否已启动，请运行：
+
+systemctl status jellyfin
