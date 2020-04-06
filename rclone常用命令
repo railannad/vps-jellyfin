@@ -8,3 +8,7 @@ screen -ls
 screen -r 运行进程
 关闭
 screen -X -S 运行进程
+开机自启动设置
+chmod +x /etc/rc.d/rc.local
+nano /etc/rc.d/rc.local
+把要开机自动执行的命令添加进去
