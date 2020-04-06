@@ -14,7 +14,6 @@ nano /etc/rc.d/rc.local
 把要开机自动执行的命令添加进去
 
 rclone mount gd: /gdrive/disk --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
-screen -S jellyfin
 systemctl enable jellyfin
 systemctl start jellyfin
-jellyfin
+jellyfin&
