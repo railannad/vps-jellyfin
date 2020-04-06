@@ -1,0 +1,5 @@
+rclone mount gd: /gdrive/disk --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
+screen -dmS new_screen sh
+screen -S new_screen -X stuff "jellyfin &&
+"
+
