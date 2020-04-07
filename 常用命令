@@ -17,3 +17,8 @@ rclone mount gd: /gdrive/disk --copy-links --no-gzip-encoding --no-check-certifi
 systemctl enable jellyfin
 systemctl start jellyfin
 jellyfin&
+
+
+因为之前更改了yum源，这次做更新的时候不知什么原因 报Freeing read locks for locker
+
+解决：yum clean all
