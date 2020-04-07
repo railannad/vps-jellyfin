@@ -1,3 +1,4 @@
+touch /var/lock/subsys/local
 rclone mount gd: /gdrive/disk --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
 rclone mount tupian: /gdrive/tupian --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
 rclone mount manhua: /gdrive/manhua --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
