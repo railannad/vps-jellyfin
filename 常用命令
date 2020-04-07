@@ -22,3 +22,22 @@ jellyfin&
 因为之前更改了yum源，这次做更新的时候不知什么原因 报Freeing read locks for locker
 
 解决：yum clean all
+补充一、
+
+有时，在linux下yum update会提示： 
+
+Another app is currently holding the yum lock解决方案 
+
+解决办法是干掉缓存中的yum进程，重启yum。 
+
+清掉缓存中的进程： 
+
+rm -f /var/run/yum.pid 
+
+重启yum（我的系统是fedora） 
+
+systemctl status yum-updatesd.service 
+
+centos用户使用： 
+
+/sbin/service yum-updatesd restart
